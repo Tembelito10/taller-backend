@@ -4,7 +4,7 @@ from models import Favorite
 import requests
 import os
 
-# Directorio base del proyecto
+# Directorio pibase del proyecto
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 # Ruta absoluta a la base de datos SQLite
 DB_PATH = os.path.join(BASE_DIR, "instance", "app.db")
