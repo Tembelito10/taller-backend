@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Rick and Morty</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
 
-<h1>Rick and Morty</h1>
+<header class="text-red-300">
+    <h1>Rick and Morty</h1>
+    
+    <!-- Formulario simple para interceder por peticiones GET enviando parámetros de búsqueda textual -->
+    <form method="get">
+        <input type="text" name="name" placeholder="Search character">
+        <button type="submit">Search</button>
+        <a href="/">Inicio</a>
+        <a href="/favorites">Favorites</a>
+    </form>
+</header>
 
-<!-- Formulario simple para interceder por peticiones GET enviando parámetros de búsqueda textual -->
-<form method="get">
-    <input type="text" name="name" placeholder="Search character">
-    <button type="submit">Search</button>
-    <a href="/">Inicio</a>
-    <a href="/favorites">Favorites</a>
-</form>
 
 <hr>
 {% if error_message %}
